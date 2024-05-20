@@ -14,8 +14,6 @@ class ArticleControllerTest extends WebTestCase
 {
     /**
      * Test index route.
-     *
-     * @return void
      */
     public function testIndexRoute(): void
     {
@@ -28,5 +26,13 @@ class ArticleControllerTest extends WebTestCase
 
         // then
         $this->assertEquals(200, $resultHttpStatusCode);
+    }
+
+    /**
+     * Test index pagination.
+     */
+    public function testIndexPagintion(): void
+    {
+        #todo: test index pagination
     }
 }
